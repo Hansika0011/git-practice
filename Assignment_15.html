@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+            table {
+                margin-left: 20%; 
+                margin-right:20%;
+                border: 1px solid black;
+            }
+            td, th {
+                border: 1.5px solid black;
+                text-align: left;
+                padding: 8px;
+                padding-right:50px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <table border="1">
+                <tr>
+                    <th colspan="4" style="font-size: 25px; text-align:center; padding-bottom:22px">Registration Form</th>
+                </tr>
+                <tr>
+                    <td>Student<br>Name</td>
+                    <td><input type="text" placeholder="First name" name="First name" required></td>
+                    <td><input type="text" placeholder="Middle name" name="Middle name" required></td>
+                    <td><input type="text" placeholder="Last name" name="Last name" required></td>
+                </tr>
+                <tr>
+                    <td>Father's<br>Name</td>
+                    <td><input type="text" placeholder="Enter your father's Name" name="Enter your father's Name" required></td>
+                    <td>Mother's Name</td>
+                    <td><input type="text" placeholder="Enter your Mother's Name" name="Enter your Mother's Name" required></td>
+                </tr>
+                <tr>
+                    <td>Date of<br>Birth</td>
+                    <td><input type="text" placeholder="dd/mm/yyyy" required></td>
+                    <td>Gender</td>
+                    <td>
+                        Male <input type="radio" value="male" name="gender">
+                        Female <input type="radio" value="female" name="gender">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>
+                        Gen <input type="radio" value="Gen" name="category">
+                        OBC <input type="radio" value="OBC" name="category">
+                        SC/ST <input type="radio" value="SC/ST" name="category">
+                    </td>
+                    <td>Handicapped</td>
+                    <td>
+                        Yes <input type="radio" value="Yes" name="handicapped">
+                        No <input type="radio" value="No" name="handicapped">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ex-Serviceman</td>
+                    <td>
+                        Yes <input type="radio" value="Yes" name="ex_serviceman">
+                        No <input type="radio" value="No" name="ex_serviceman">
+                    </td>
+                    <td>EWS</td>
+                    <td>
+                        Yes <input type="radio" value="Yes" name="ews">
+                        No <input type="radio" value="No" name="ews">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email ID</td>
+                    <td><input type="email" required></td>
+                    <td>Mobile No.</td>
+                    <td><input type="text" required></td>
+                </tr>
+                <tr>
+                    <td>State</td>
+                    <td >
+                        <select name="state" id="state">
+                            <option value="">Select any One</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Gujarat">Gujarat</option>
+                        </select>
+                    </td>
+                    <td>City</td>
+                    <td >
+                        <select name="city" id="city">
+                            <option value="">Select any One</option>
+                            <option value="Guntur">Guntur</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Lucknow">Lucknow</option>
+                            <option value="Ahmedhabad">Ahmedhabad</option>
+                        </select>
+                        <tr>
+                            <td>Upload<br>Photo</td>
+                            <td>  <input type="submit" value="Choose File"> No file chosen</td>
+                            <td>Upload Signature</td>
+                            <td>  <input type="submit" value="Choose File"> No file chosen</td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td colspan="3" style = "text-align:center"><input type="submit" value="Submit"></td>                         
+                          
+                        </tr>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

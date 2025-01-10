@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 50%;
+        margin: auto;
+        padding: 20px;
+        background-color: #007bff;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        color: #fff;
+        text-align: center;
+    }
+    .form-container {
+        background-color: #fff;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"], input[type="email"], input[type="password"], select {
+        width: calc(100% - 10px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type="radio"] {
+        margin-right: 5px;
+    }
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    .gender-options {
+        display: flex;
+    }
+    .gender-label {
+        margin-right: 10px;
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <div class="form-container">
+            <form action="register.php" method="POST">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" required><br>
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" required><br>
+                <label>Gender:</label>
+                <div class="gender-options">
+                    <label class="gender-label"><input type="radio" name="gender" value="male" required> Male</label>
+                    <label class="gender-label"><input type="radio" name="gender" value="female"> Female</label>
+                    <label class="gender-label"><input type="radio" name="gender" value="other"> Other</label>
+                </div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone"><br>
+                <div style="text-align: center;">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
